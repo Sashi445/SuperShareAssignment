@@ -7,5 +7,5 @@
 
 ### Output 
 
-![OUTPUT](./SuperShareOutput.gif)
+![OUTPUT](./SuperShareOutput.gif =x1000)
 
