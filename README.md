@@ -7,5 +7,5 @@
 
 ### Output 
 
-![](./SuperShareOutput.gif)
+![OUTPUT](./SuperShareOutput.gif)
 
