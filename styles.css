@@ -1,0 +1,70 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.root {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    position: relative;
+}
+
+.layer {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 80vw;
+    height : 80%;
+    background-color: #101010;
+}
+
+.graphics{
+    -webkit-mask-image: url("./assets/square-circle.svg");
+    -webkit-mask-size : 50px;
+}
+
+.images{
+    background-image: linear-gradient(to bottom, #2e2142, #261d37, #1e192d, #171522, #110f18, #0e0e16, #0c0d13, #0b0c0f, #0f1115, #11151a, #13181f, #141c24);
+    -webkit-mask-image : url("./assets/mobile-svg.svg");
+    -webkit-mask-repeat : no-repeat;
+    -webkit-mask-position: center ;
+    -webkit-mask-size : contain;
+}
+
+.box {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    top: 30%;
+    animation: move 18s linear infinite;
+    overflow: hidden;
+    transform: translateX(-100%);
+}
+
+.two {
+    animation-delay: 6s;
+}
+
+.three {
+    animation-delay: 12s;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@-webkit-keyframes move {
+    0%{
+    }
+    100%{
+        transform: translateX(1200px);
+    }
+}
